@@ -48,12 +48,12 @@ while calculate:
     |_____________________|
     """)
 
-    num1 = int(input("Enter the first number: "))
-    symbols_print()
-    operator = input("Enter the operator: ")
-    num2 = int(input("Enter the second number: "))
+    num1 = int(input("Enter the first number: ")) # Prompt user for first number.
+    symbols_print() # Prints the symbols for user to select from.
+    operator = input("Enter the operator: ") # Prompts user to enter operator.
+    num2 = int(input("Enter the second number: ")) # Prompts user for second number.
 
-    result = symbols[operator](n1=num1, n2=num2)
+    result = symbols[operator](n1=num1, n2=num2) # Assigns user input as the function parameter values.
     print(f"{num1} {operator} {num2} = {result}")
 
     calculate_with_result = True
