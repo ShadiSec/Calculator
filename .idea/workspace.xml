@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27529c4b-d93b-4890-8905-4243567537de" name="Changes" comment="Cleared file to start from scratch">
+    <list default="true" id="27529c4b-d93b-4890-8905-4243567537de" name="Changes" comment="Added calculator logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.py" afterDir="false" />
     </list>
@@ -103,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745330150306</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added calculator logic">
+      <option name="closed" value="true" />
+      <created>1745354414797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745354414798</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -111,6 +119,7 @@
     <MESSAGE value="hello world" />
     <MESSAGE value="hello world 3" />
     <MESSAGE value="Cleared file to start from scratch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleared file to start from scratch" />
+    <MESSAGE value="Added calculator logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added calculator logic" />
   </component>
 </project>

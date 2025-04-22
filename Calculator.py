@@ -1,21 +1,20 @@
+# Function for addition
 def add(n1, n2):
-    return n1 + n2
+    return n1 + n2 # Returns addition results
 
+# Function for subtraction
 def subtract(n1, n2):
-    return n1 - n2
+    return n1 - n2 # Returns subtraction results
 
+# Function for multiplying
 def multiply(n1, n2):
-    return n1 * n2
+    return n1 * n2 # Returns multiplication results
 
+# Function for division
 def divide(n1, n2):
-    return n1 / n2
+    return n1 / n2 # Returns division results
 
-def clear_console():
-    if os.name == "nt":
-        os.system("cls")
-    else:
-        os.system("clear")
-
+# Dictionary with the operator symbols. Created for easier function calling.
 symbols = {
     "+": add,
     "-": subtract,
@@ -23,12 +22,14 @@ symbols = {
     "/": divide
 }
 
+# Prints the symbol options before taking operations input.
 def symbols_print():
     for symbol in symbols:
         print(symbol)
 
 calculate = True
 
+# A loop to continue prompting the user for calculations input.
 while calculate:
     print(r"""
      _____________________
@@ -57,8 +58,11 @@ while calculate:
 
     calculate_with_result = True
 
+    # Loop to continue using the previous result in the calculations.
     while calculate_with_result:
         again = input(f"To continue calculating with {result} type 'y', otherwise type 'n' to begin new calculation: ").lower()
+
+        # If user selects to continue calculation with previous result.
         if again == "y":
             num1 = result
             symbols_print()
@@ -68,6 +72,7 @@ while calculate:
             result = symbols[operator](n1=num1, n2=num2)
 
             print(f"{num1} {operator} {num2} = {result}")
+        # Exits the second loop and prompts user for initial inputs.
         else:
             calculate_with_result = False
             print("\n" * 100)
