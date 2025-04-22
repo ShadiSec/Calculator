@@ -53,7 +53,7 @@ while calculate:
     operator = input("Enter the operator: ") # Prompts user to enter operator.
     num2 = int(input("Enter the second number: ")) # Prompts user for second number.
 
-    result = symbols[operator](n1=num1, n2=num2) # Assigns user input as the function parameter values.
+    result = symbols[operator](n1=num1, n2=num2) # Retrieves the correct function from the dictionary and assigns user input as parameter values.
     print(f"{num1} {operator} {num2} = {result}")
 
     calculate_with_result = True
